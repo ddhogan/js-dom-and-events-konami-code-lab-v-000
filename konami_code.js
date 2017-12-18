@@ -7,6 +7,7 @@ function init() {
     const key = parseInt(e.which || e.detail);
 
     if (key === code[index]) {
+      // console.log("correct")
       index++;
 
       if (index === code.length) {
@@ -14,6 +15,7 @@ function init() {
         index = 0;
       }
     } else {
+      // console.log("no konami, try again")
       index = 0;
     }
   });
